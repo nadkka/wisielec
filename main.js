@@ -4,8 +4,11 @@ trafienie= false;
 var bledy=0;
 
 function start(){
-    slowa=["jajko", "komputer", "kremówki", "pieniądze", "kalkulator", "naleśniki", "borówka", "pociąg", "kanapki", "ślimak", "antarktyda", "księżniczka","środowisko",'tysiąc','firma','dobrze','republikański','opcja','profesjonalny','pomiędzy','energia','kontyntynuj','kilogram'];
-    slowo=slowa[Math.floor(Math.random() * slowa.length)];
+    slowa=["jajko", "komputer", "kremówki", "pieniądze", "kalkulator", "naleśniki", "borówka", "pociąg", "kanapki", "ślimak", "antarktyda", "księżniczka","kolorowanka",'tysiąc','komoda','chevrolet','pięćdziesięciogroszówka','arachnofobia','lekkoatletyka','kasztanowy','kołowrotek','deoksyrybonukleinowy'];
+    kategoria=["jedzenie", "urządzenie", "jedzenie", "rzeczy", "urządzenie", "jedzenie", "jedzenie", "transport", "jedzenie", "zwierzę", "kontynent", "osoba","rzecz",'liczba','mebel','auto','moneta','lęk','sport','kolor','rzecz','biologia'];
+    indeks=Math.floor(Math.random() * slowa.length)
+    slowo=slowa[indeks];
+    document.getElementById("kategoria").innerHTML= kategoria[indeks];
     dl=slowo.length;
     
     for(var i=0; i<dl; i++){
